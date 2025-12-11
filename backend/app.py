@@ -48,11 +48,6 @@ def format_solutions(solutions):
 
     if len(solutions) == 2 and solutions[0] == "EVAL":
         result = solutions[1]
-        try:
-            if float(result) == int(float(result)):
-                return str(int(float(result)))
-        except (ValueError, TypeError):
-            pass
         result_str = str(result).replace("I", "i")
         return result_str
 
